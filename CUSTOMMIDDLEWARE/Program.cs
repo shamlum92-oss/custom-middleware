@@ -1,25 +1,42 @@
-using CUSTOMMIDDLEWARE;
+using CUSTOMMIDDLEWARE.Models;
+
+using CUSTOMMIDDLEWARE.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Register API Explorer and Swagger generator services
+// Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Register SQLite Entity Framework Core DbContext
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=blogs.db"));
+
 var app = builder.Build();
 
-// 2. Enable Swagger middleware in development mode
+// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// 3. Custom middleware extension method
-app.UseRequestProfiler();
+app.UseHttpsRedirection();
 
-// 4. Endpoints
-app.MapGet("/api/public/data", () => Results.Ok(new { Message = "Public data accessed!" }));
-app.MapGet("/api/secure/data", () => Results.Ok(new { Message = "Confidential payload!" }));
+// Example Minimal API endpoints for Blogs matching your schema
+app.MapGet("/blogs", async (AppDbContext db) =>
+    await db.Blogs.ToListAsync());
+
+app.MapPost("/blogs", async (Blog blog, AppDbContext db) =>
+{
+    db.Blogs.Add(blog);
+    await db.SaveChangesAsync();
+    return Results.Created($"/blogs/{blog.Id}", blog);
+});
+
+app.MapGet("/blogs/{id}", async (int id, AppDbContext db) =>
+    await db.Blogs.FindAsync(id)
+        is Blog blog ? Results.Ok(blog) : Results.NotFound());
 
 app.Run();
