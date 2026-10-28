@@ -26,3 +26,11 @@ C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\obj\Deb
 C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\obj\Debug\net10.0\CUSTOMMIDDLEWARE.pdb
 C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\obj\Debug\net10.0\CUSTOMMIDDLEWARE.genruntimeconfig.cache
 C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\obj\Debug\net10.0\ref\CUSTOMMIDDLEWARE.dll
+C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\obj\Debug\net10.0\CUSTOMMIDDLEWARE.sourcelink.json
+C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\obj\Debug\net10.0\CUSTOMMIDDLEWARE.csproj.AssemblyReference.cache
+C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\obj\Debug\net10.0\CUSTOMMIDDLEWARE.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SHAM KING\Desktop\API project\custommiddleware\CUSTOMMIDDLEWARE\obj\Debug\net10.0\CUSTOMMI.33B2A920.Up2Date

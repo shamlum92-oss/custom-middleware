@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CUSTOMMIDDLEWARE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2914338e71f29bba892190aed4cfa86f5eee1334")]
 [assembly: System.Reflection.AssemblyProductAttribute("CUSTOMMIDDLEWARE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CUSTOMMIDDLEWARE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
